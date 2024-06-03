@@ -24,6 +24,11 @@ connection.once('open', () => {
   console.log('MongoDB database connection established successfully');
 });
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Contact API');
+});
+
 // Routes
 const contactRouter = require('./routes/contact');
 app.use('/api/contact', contactRouter);
