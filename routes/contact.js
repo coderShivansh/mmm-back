@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let Contact = require('../models/contact');
+let Contact = require('../models/Contact');
 const sendEmail = require('../utils/mailer');
 const sendWhatsAppMessage = require('../utils/whatsapp');
 
